@@ -55,7 +55,7 @@ export const updateUser = async (user, dispatch) => {
 ## Window Dimension 
 It's not a library, but a piece of code (made up hook) to get the height and width of browser window.
 
-- Put this code in a filled as a hook, util, or other like `useWindowDimensions.js`.
+- Put this code as a hook, util, or other like `useWindowDimensions.js`.
 ```
 import { useEffect, useState } from "react";
 
