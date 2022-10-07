@@ -1,11 +1,4 @@
 
-# Why did I make this repo?
-
-Simple. Just to inform some unique, easy to use, hidden gems library, tech, etc. That are rarely known or used by developers.
-
-
-
-
 ## json-server 
 **Frontend Dev**
 
@@ -41,7 +34,7 @@ Simple way to use it
 ```
   npm json-server --watch data/db.json --port 8000
 ```
-- This virtual local server acts like real server (no cap 🧢)
+- This virtual local server acts like real server (Like you and her, jalan doang jadian kaga)
 ```
 import axios from "axios";
 
@@ -59,4 +52,43 @@ export const updateUser = async (user, dispatch) => {
 }
 ```
 
-    
+## Window Dimension 
+It's not a library, but a piece of code (made up hook) to get the height and width of browser window.
+
+- Put this code in a filled as a hook, util, or other like `useWindowDimensions.js`.
+```
+import { useEffect, useState } from "react";
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+```
+
+- It will be returned as an object. Then import and destructure it in other file 
+```
+import useWindowDimensions from './hooks/useWindowDimensions';
+
+const { width, height } = useWindowDimensions();
+
+```
