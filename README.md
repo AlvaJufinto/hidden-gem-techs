@@ -34,7 +34,7 @@ Simple way to use it
 ```
   npm json-server --watch data/db.json --port 8000
 ```
-- This virtual local server acts like real server (Like you and her, jalan doang jadian kaga)
+- This virtual local server acts like real server
 ```
 import axios from "axios";
 
