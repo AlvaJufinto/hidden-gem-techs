@@ -92,3 +92,21 @@ import useWindowDimensions from './hooks/useWindowDimensions';
 const { width, height } = useWindowDimensions();
 
 ```
+
+## Polacode 📸
+**Programmer**
+
+Polacode 📸 is a VSCode extension to easily capture your code! Instead of using [carbon.now.ssh](https://carbon.now.sh/) to take a beautiful capture of your code, you can use Polacode in a faster way. 
+- [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+
+
+Simple way to use it
+- Install the **Polacode** 📸 Extension first 
+- Press `ctrl + shift + p`
+- Search for `Polacode 📸` and press `enter`
+- Block some code and copy it with `ctrl + c`
+- Paste it on Polacode 📸 tab with `ctrl + v`
+- You're good with it!
+
+![alt text](https://media.discordapp.net/attachments/1021751620331126865/1031106322323734548/code_example.png?width=778&height=415)
+
