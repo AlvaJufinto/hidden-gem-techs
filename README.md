@@ -1,3 +1,12 @@
+# Why did I make this repo?
+
+Simple. Just to inform some little trick, library, VSCode extension that I use. That are rarely known or used by (Frontend) developers.
+
+**List of contents**
+- [json-server](https://github.com/AlvaJufinto/my-little-trick#json-server)
+- [Window Dimension](https://github.com/AlvaJufinto/my-little-trick#window-dimension)
+- [Polacode 📸](https://github.com/AlvaJufinto/my-little-trick#polacode-)
+
 
 ## json-server 
 **Frontend Dev**
