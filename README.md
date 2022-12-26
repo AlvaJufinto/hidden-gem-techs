@@ -1,11 +1,12 @@
-# Why did I make this repo?
+# My Little Trick.
 
+## Why did I make this repo?
 Simple. Just to inform some little trick, library, VSCode extension that I use. That are rarely known or used by (Frontend) developers.
 
 **List of contents**
 - [json-server](https://github.com/AlvaJufinto/my-little-trick#json-server)
 - [Window Dimension](https://github.com/AlvaJufinto/my-little-trick#window-dimension)
-- [Polacode 📸](https://github.com/AlvaJufinto/my-little-trick#polacode-)
+- [Polacode 📸](https://github.com/AlvaJufinto/my-little-trick#polacode)
 
 
 ## json-server 
@@ -20,7 +21,7 @@ Created for front-end developers who need a quick back-end for prototyping and m
 Simple way to use it
 - Create a folder in **/src** called **data**
 - Then make a file **db.json** 
-- Write DB in JSON format like this, (like mongoose?)
+- Write DB in JSON format like this, (like MongoDB?)
 ```
 {
   "posts": [
@@ -62,6 +63,8 @@ export const updateUser = async (user, dispatch) => {
 ```
 
 ## Window Dimension 
+**Frontend Dev**
+
 It's not a library, but a piece of code (made up hook) to get the height and width of browser window.
 
 - Put this code as a hook, util, or other like `useWindowDimensions.js`.
@@ -119,3 +122,17 @@ Simple way to use it
 
 ![alt text](https://media.discordapp.net/attachments/1021751620331126865/1031106322323734548/code_example.png?width=778&height=415)
 
+## ts-node-dev
+**Backend Dev**
+
+It restarts target node process when any of required files changes (as standard node-dev) but shares Typescript compilation process between restarts. This significantly increases speed of restarting server because there is no need to instantiate `ts-node` compilation each time; 
+
+`TLDR : Nodemon but for ts`
+- [Documentation](https://www.npmjs.com/package/ts-node-dev) 
+- [Github](https://github.com/wclr/ts-node-dev)
+
+Simple way to use it
+- `npm i ts-node-dev --save-dev` | `yarn add ts-node-dev --dev`
+- Usage : `ts-node-dev [node-dev|ts-node flags] [ts-node-dev flags] [node cli flags] [--] [script] [script arguments]`
+- Example : `ts-node-dev --respawn --transpile-only --exit-child --watch src index.ts`
+```
