@@ -1,16 +1,16 @@
 # My Little Trick.
 
 ## Why did I make this repo?
-Simple. Just to inform some little trick, library, VSCode extension that I use. That are rarely known or used by (Frontend) developers.
+Simple. Just to save snippet code, library, VSCode extension that I use on daily basis and that are rarely known or used by developers.
 
-**List of contents**
-- [json-server](https://github.com/AlvaJufinto/my-little-trick#json-server)
-- [Window Dimension](https://github.com/AlvaJufinto/my-little-trick#window-dimension)
-- [Polacode 📸](https://github.com/AlvaJufinto/my-little-trick#polacode)
+#### **List of contents**
 
+<details>
+<summary><b>json-server</b></summary>
 
-## json-server 
-**Frontend Dev**
+### json-server  
+
+**Frontend Dev Node Library**
 
 Fake REST API with zero coding in less than 30 seconds (seriously).
 Created for front-end developers who need a quick back-end for prototyping and mocking.
@@ -61,9 +61,13 @@ export const updateUser = async (user, dispatch) => {
     }
 }
 ```
+</details>
 
-## Window Dimension 
-**Frontend Dev**
+<details>
+<summary><b>Window Dimension</b></summary>
+
+### Window Dimension 
+**Frontend Dev Code**
 
 It's not a library, but a piece of code (made up hook) to get the height and width of browser window.
 
@@ -104,9 +108,14 @@ import useWindowDimensions from './hooks/useWindowDimensions';
 const { width, height } = useWindowDimensions();
 
 ```
+</details>
 
-## Polacode 📸
-**Programmer**
+
+<details>
+<summary><b>Polacode 📸</b></summary>
+
+### Polacode 📸
+**Visual Studio Code Extension**
 
 Polacode 📸 is a VSCode extension to easily capture your code! Instead of using [carbon.now.ssh](https://carbon.now.sh/) to take a beautiful capture of your code, you can use Polacode in a faster way. 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
@@ -122,8 +131,13 @@ Simple way to use it
 
 ![alt text](https://media.discordapp.net/attachments/1021751620331126865/1031106322323734548/code_example.png?width=778&height=415)
 
+</details>
+
+<details>
+<summary><b>ts-node-dev</b></summary>
+
 ## ts-node-dev
-**Backend Dev**
+**Backend Dev Node Library**
 
 It restarts target node process when any of required files changes (as standard node-dev) but shares Typescript compilation process between restarts. This significantly increases speed of restarting server because there is no need to instantiate `ts-node` compilation each time; 
 
@@ -135,4 +149,23 @@ Simple way to use it
 - `npm i ts-node-dev --save-dev` | `yarn add ts-node-dev --dev`
 - Usage : `ts-node-dev [node-dev|ts-node flags] [ts-node-dev flags] [node cli flags] [--] [script] [script arguments]`
 - Example : `ts-node-dev --respawn --transpile-only --exit-child --watch src index.ts`
-```
+
+</details>
+
+<details>
+<summary><b>Markdown Preview</b></summary>
+
+### Markdown Preview 
+**Visual Studio Code Extension**
+
+Markdown Preview lets you compile markdown like README.md and others on your VS Code Text Editor. It will automatically run and compile as you make changes in your markdown file.
+
+- [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- [Github](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)
+
+Simple way to use it
+- Install the **Markdown Preview Enhanced** Extension first 
+- Press `ctrl + k + v` for quick shortcut
+- You're good with it!
+
+</details>
